@@ -1,0 +1,14 @@
+#include "../include/lrps.h"
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+    
+    printf("Enter a, b, c, d: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    
+    FormulaResult result = calculate_formula(a, b, c, d);
+    print_result(result);
+    
+    return 0;
+}
