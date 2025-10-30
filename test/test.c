@@ -3,7 +3,7 @@
 #include <math.h>
 
 void test_case(int a, int b, int c, int d, char* name) {
-    printf("=== Test: %s ===\n", name);
+    printf("Test: %s \n", name);
     printf("Input: a=%d, b=%d, c=%d, d=%d\n", a, b, c, d);
     
     Formula res = find_formula(a, b, c, d);
@@ -23,7 +23,7 @@ void test_case(int a, int b, int c, int d, char* name) {
 }
 
 int main() {
-    printf("Running tests...\n\n");
+    printf("tests\n\n");
     
     test_case(1, 1, 1, 1, "Fibonacci");
     test_case(2, -1, 1, 3, "Arithmetic progression");
@@ -34,6 +34,6 @@ int main() {
     test_case(2, 0, 3, 6, "b = 0");
     test_case(0, 0, 5, 5, "Zero sequence");
     
-    printf("All tests done!\n");
+    printf("All tests done\n");
     return 0;
 }
